@@ -44,6 +44,10 @@ If you want to disable the uploading of packages to the `usask-arg` channels, de
  - `.github/workflows/nightly.yml`
  - `.github/workflows/release.yml`
 
+### Automatic Documentation Building
+If you want your project documentation to be automatically built and hosted on readthedocs.org, ask @dannyzed.
+If you do not want your documentation to be hosted on readthedocs.org you can delete the `.readthedocs.yaml` file.
+
 ## Adding dependencies
 If you need to add a dependency to the project, it must be added in the following places
 
@@ -57,13 +61,24 @@ The template is configured to test the code on the latest three available Python
 - `pyproject.toml`
 - `.github/workflows/test.yml`
 
+## Releasing a New Package Version
+To release an official version of the package, click on Releases on the home page of your project, then draft a new release.
+Here, click on "Choose a tag" and name your tag `vX.Y.Z` where `X.Y.Z` is the version number.  For `usask-arg` projects we
+recommend using Calendar Versioning (https://calver.org) which has the form `YYYY.MM.MICRO` where
+
+- `YYYY` is the current year, e.g. 2024
+- `MM` is the current month as a two element string, e.g. 08
+- `MICRO` starts at 0 and increments by one each release that month.  The first release of 2024-08 would be `2024.08.0` and the second release would be `2024.08.1`
+
+You can then write some release notes and make the release.
+
 # PROJECTNAMEHERE
 
-[![Anaconda-Server Badge](https://anaconda.org/usask-arg/PROJECTNAMEHERE/badges/version.svg)](https://anaconda.org/usask-arg/PROJECTNAMEHERE)
-[![Documentation Status](https://readthedocs.org/projects/PROJECTNAMEHERE/badge/?version=latest)](https://PROJECTNAMEHERE.readthedocs.io/en/latest/?badge=latest)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/usask-arg/PROJECTNAMEHERE/main.svg)](https://results.pre-commit.ci/latest/github/usask-arg/PROJECTNAMEHERE/main)
+[![Anaconda-Server Badge](https://anaconda.org/usask-arg/usask_arg_example/badges/version.svg)](https://anaconda.org/usask-arg/usask_arg_example)
+[![Documentation Status](https://readthedocs.org/projects/usask_arg_example/badge/?version=latest)](https://usask_arg_example.readthedocs.io/en/latest/?badge=latest)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/usask-arg/usask_arg_example/main.svg)](https://results.pre-commit.ci/latest/github/usask-arg/usask_arg_example/main)
 
-Short description of project here. MAKE SURE TO UPDATE THE 6 instances of PROJECTNAMEHERE in the urls above.
+Short description of project here. MAKE SURE TO UPDATE THE 6 instances of usask_arg_example in the urls above to the name of your project.
 
 ## Installation
 The package can be installed through `conda` with
