@@ -9,7 +9,7 @@ description="usask arg example project"
 readme = "README.md"
 dependencies = ['numpy']
 authors = [
-    { name = "AUTHOR", email = "AUTHOREXAMPLE" },
+    { name = "AUTHOR", email = "AUTHOR@EXAMPLE.com" },
 ]
 requires-python = ">=3.10"
 classifiers = [

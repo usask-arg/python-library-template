@@ -42,12 +42,6 @@ The template is configured to test the code on the latest three available Python
 - `pyproject.toml`
 - `.github/workflows/test.yml`
 
-In addition the primary Python version used to build the documentation is specified in
-
-- `env.yml`
-
-
-
 # usask-arg-example
 
 Short description of project here

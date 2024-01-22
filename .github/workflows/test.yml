@@ -14,7 +14,7 @@ concurrency:
 
 
 jobs:
-  test-skretrieval:
+  test:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -48,7 +48,7 @@ jobs:
         run: |
           python -m pytest -v tests/
 
-  test-conda:
+  test-conda-build:
     runs-on: ubuntu-latest
 
     steps:
