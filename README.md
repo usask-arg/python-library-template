@@ -2,6 +2,15 @@
 A template repository for pure Python modules developed at the University of Saskatchewan
 Atmospheric Research Group (usask-arg) that are to be publicly developed on GitHub.
 
+To create a project based on this template, press the green use this template button on the top right.
+The template can either be used for personal projects under your own namespace, or projects
+in the `usask-arg` namespace.  If the project is created under your namespace then the deployment
+of the package to the `usask-arg` anaconda channels will not work, and you should delete the following files:
+
+ - `.github/workflows/nightly.yml`
+ - `.github/workflows/release.yml`
+
+
 ## Check list when creating a new repository
 
 ### Updating Files
