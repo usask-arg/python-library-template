@@ -4,11 +4,7 @@ Atmospheric Research Group (usask-arg) that are to be publicly developed on GitH
 
 To create a project based on this template, press the green use this template button on the top right.
 The template can either be used for personal projects under your own namespace, or projects
-in the `usask-arg` namespace.  If the project is created under your namespace then the deployment
-of the package to the `usask-arg` anaconda channels will not work, and you should delete the following files:
-
- - `.github/workflows/nightly.yml`
- - `.github/workflows/release.yml`
+in the `usask-arg` namespace.
 
 
 ## Check list when creating a new repository
@@ -18,11 +14,6 @@ After using this template, there are a few files which need to be updated.
 
 `pyproject.toml`
  - Read through and update all fields in the `[project]` section
-
-`conda.recipe/meta.yaml`
- - Update the `package:` section with the package name
- - Update the `tests: imports:` section with the package name
- - Look through the `about:` section and update accordingly
 
 `src/usask_arg_example/__init__.py`
  - Remove the example function
@@ -60,9 +51,7 @@ If you do not want your documentation to be hosted on readthedocs.org you can de
 ## Adding dependencies
 If you need to add a dependency to the project, it must be added in the following places
 
-- `env.yml`
 - `pypoject.toml`, the "dependencies" section
-- `conda.recipe/meta.yaml`, the "requirements/run" section
 
 ## Updating Python versions
 The template is configured to test the code on the latest three available Python versions.  These are defined in
@@ -83,7 +72,6 @@ You can then write some release notes and make the release.
 
 # PROJECTNAMEHERE
 
-[![Anaconda-Server Badge](https://anaconda.org/usask-arg/usask_arg_example/badges/version.svg)](https://anaconda.org/usask-arg/usask_arg_example)
 [![Documentation Status](https://readthedocs.org/projects/usask_arg_example/badge/?version=latest)](https://usask_arg_example.readthedocs.io/en/latest/?badge=latest)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/usask-arg/usask_arg_example/main.svg)](https://results.pre-commit.ci/latest/github/usask-arg/usask_arg_example/main)
 
